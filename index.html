@@ -3,197 +3,177 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Katalog TKDN &amp; PDN Epson — Pengadaan Resmi Indonesia</title>
+  <meta name="description" content="Katalog digital lengkap 79 produk Epson Indonesia bersertifikat TKDN Kemenperin RI &amp; Produk Dalam Negeri (PDN): Printer EcoTank, WorkForce, Scanner, Dot Matrix, Passbook, ColorWorks, Plotter SureColor, Proyektor, dan Tinta." />
   <meta name="color-scheme" content="light dark" />
-  <title>Epson TKDN &amp; PDN — Katalog Digital Pengadaan Resmi</title>
-  <meta name="description" content="Katalog digital interaktif seluruh produk Epson Indonesia bersertifikat TKDN Kemenperin RI &amp; Produk Dalam Negeri (PDN): Printer EcoTank, WorkForce Enterprise, Scanner, Dot Matrix, Passbook, ColorWorks, Plotter SureColor, Proyektor, dan Tinta." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003399'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' fill='white' font-family='-apple-system,BlinkMacSystemFont,sans-serif' font-weight='800' font-size='22'%3ETKDN%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="Katalog TKDN &amp; PDN Epson Indonesia" />
+  <meta property="og:description" content="79 produk Epson bersertifikat TKDN &amp; PDN beserta nomor sertifikat resmi Kemenperin RI." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003399'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' fill='white' font-family='-apple-system,BlinkMacSystemFont,sans-serif' font-weight='800' font-size='20'%3ETKDN%3C/text%3E%3C/svg%3E" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- macOS Top Menu Bar -->
+  <!-- macOS menu bar -->
   <header class="menubar" role="banner">
     <div class="menubar-left">
-      <span class="epson-mark" aria-label="Epson">EPSON</span>
-      <span class="menu-title">Katalog TKDN &amp; PDN</span>
-      <nav class="menu-links" aria-label="Menu utama">
-        <button class="menu-link" data-menu="all">Semua Produk</button>
-        <button class="menu-link" data-menu="certs">Tabel Sertifikat</button>
-        <button class="menu-link" data-menu="compare">Bandingkan</button>
-        <button class="menu-link" data-menu="CrossLinkPrinter">Katalog EcoTank</button>
-        <button class="menu-link" data-menu="CrossLinkProj">Katalog Proyektor</button>
-        <button class="menu-link" data-menu="about">Tentang TKDN</button>
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1.06 13.54L7.4 12l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41-5.64 5.66z"/></svg>
+      </span>
+      <strong>Katalog TKDN &amp; PDN</strong>
+      <nav class="menu-items" aria-label="Menu">
+        <button data-menu="all">Semua</button>
+        <button data-menu="certs">Tabel Sertifikat</button>
+        <button data-menu="compare">Bandingkan</button>
+        <button data-menu="CrossLinkPrinter">EcoTank</button>
+        <button data-menu="CrossLinkProj">Projector</button>
+        <button data-menu="about">Tentang</button>
       </nav>
     </div>
     <div class="menubar-right">
-      <button class="icon-btn" id="spotlightBtn" title="Cari produk / No. Sertifikat (⌘K atau /)" aria-label="Pencarian cepat">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
-        <span class="kbd">⌘K</span>
+      <button class="icon-btn" id="spotlightBtn" aria-label="Cari (Ctrl+K)" title="Cari (⌘K)">
+        <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
       </button>
-      <button class="icon-btn" id="themeBtn" title="Ganti mode terang / gelap" aria-label="Ganti tema">
-        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1zm14.9 14.9 1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1zM1 11h3v2H1v-2zm19 0h3v2h-3v-2zM3.5 19.1l2.1-2.1 1.4 1.4-2.1 2.1-1.4-1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1L17 5.6z"/></svg>
-        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.5 7.5 0 0 1 12.3 3z"/></svg>
+      <button class="icon-btn" id="themeBtn" aria-label="Ganti tema" title="Ganti tema">
+        <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.5 5.5 0 0 1-7.54-7.54A9.1 9.1 0 0 0 12 3z"/></svg>
       </button>
-      <span class="clock" id="clock" aria-live="off"></span>
+      <span id="clock" class="clock"></span>
     </div>
   </header>
 
-  <!-- Main Finder-style Window -->
-  <div class="desktop">
-    <div class="window" id="catalogWindow">
-      <!-- Window Toolbar -->
-      <div class="titlebar">
-        <div class="traffic" aria-hidden="true">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
+  <main class="desktop">
+    <!-- Main Finder-style window -->
+    <section class="window main-window" aria-label="Katalog">
+      <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div class="traffic" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <span class="sheet-title mobile-only">Filter &amp; Menu</span>
+          <button class="sheet-done mobile-only" id="drawerClose" aria-label="Tutup filter">Selesai</button>
         </div>
-        <div class="window-heading">
-          <h1 id="paneTitle">Semua Produk TKDN &amp; PDN</h1>
-          <span class="sub" id="paneCount">Memuat…</span>
-        </div>
-        <div class="toolbar-controls">
-          <button class="filter-pill" id="filterBtn" aria-label="Filter &amp; Kategori" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4V6zm3 5h10v2H7v-2zm4 5h2v2h-2v-2z"/></svg>
-            <span>Filter</span>
-            <b class="filter-badge" id="filterBadge" hidden>0</b>
-          </button>
-          <div class="search-field">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
-            <input type="search" id="searchInput" placeholder="Cari model, kode SKU, nomor sertifikat (mis. L3251, DS-530II, EB-X600, 6109)…" autocomplete="off" />
-            <button class="clear-btn" id="clearSearch" hidden aria-label="Hapus pencarian">×</button>
+        <div class="side-group mobile-only">
+          <h6>Navigasi</h6>
+          <div class="ink-tags">
+            <button class="ink-tag" data-menu="certs">Tabel Sertifikat</button>
+            <button class="ink-tag" data-menu="compare">Bandingkan</button>
+            <button class="ink-tag" data-menu="CrossLinkPrinter">Katalog EcoTank</button>
+            <button class="ink-tag" data-menu="CrossLinkProj">Katalog Proyektor</button>
+            <button class="ink-tag" data-menu="about">Tentang</button>
           </div>
-          <div class="segmented" role="group" aria-label="Tampilan">
-            <button data-view="grid" class="active" title="Tampilan ikon">
-              <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+        </div>
+        <div class="side-group">
+          <h6>Kategori</h6>
+          <ul id="categoryList"></ul>
+        </div>
+        <div class="side-group">
+          <h6>Filter TKDN &amp; Fitur</h6>
+          <ul id="featureList"></ul>
+        </div>
+        <div class="side-group">
+          <h6>Tingkat TKDN / Status</h6>
+          <div class="ink-tags" id="tierList"></div>
+        </div>
+        <div class="side-group">
+          <h6>Akses Cepat</h6>
+          <div class="ink-tags">
+            <button class="ink-tag" data-menu="certs">Tabel No. Sertifikat</button>
+            <button class="ink-tag" data-menu="CrossLinkPrinter">Katalog EcoTank</button>
+            <button class="ink-tag" data-menu="CrossLinkProj">Katalog Proyektor</button>
+          </div>
+        </div>
+        <div class="sheet-footer mobile-only">
+          <button class="btn" id="sheetReset">Reset</button>
+          <button class="btn primary" id="sheetApply">Tampilkan hasil</button>
+        </div>
+        <p class="side-foot">Data: Katalog TKDN Epson FY25 &amp; Sertifikat Kemenperin RI (Efektif 28 Agu 2026)</p>
+      </aside>
+
+      <div class="pane">
+        <!-- Apple.com chapter nav (mobile) -->
+        <nav class="chapternav mobile-only" id="chapterNav" aria-label="Kategori"></nav>
+        <!-- Apple-style subnav for Filter & Status TKDN (mobile) -->
+        <div class="subfilter-bar mobile-only">
+          <div class="subfilter-row" id="mobileFeatureBar" aria-label="Filter"></div>
+          <div class="subfilter-row" id="mobileStatusBar" aria-label="Tingkat TKDN"></div>
+        </div>
+        <div class="toolbar">
+          <div class="traffic mobile-only" aria-hidden="true"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+          <div class="title-block">
+            <h1 id="paneTitle">Semua Produk</h1>
+            <span id="paneCount" class="muted"></span>
+          </div>
+          <div class="toolbar-actions">
+            <div class="segmented" role="tablist" aria-label="Tampilan">
+              <button class="active" data-view="grid" aria-label="Grid" title="Grid">
+                <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z"/></svg>
+              </button>
+              <button data-view="list" aria-label="Daftar" title="Daftar">
+                <svg viewBox="0 0 24 24"><path d="M4 5h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"/></svg>
+              </button>
+            </div>
+            <select id="sortSelect" class="select" aria-label="Urutkan">
+              <option value="default">Urutan kategori</option>
+              <option value="tkdn">Nilai TKDN+BMP tertinggi</option>
+              <option value="new">Sertifikat 2026 dulu</option>
+              <option value="name">Nama A–Z</option>
+            </select>
+            <label class="search">
+              <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+              <input id="searchInput" type="search" placeholder="Cari model, SKU, no. sertifikat…" autocomplete="off" />
+            </label>
+            <button class="filter-pill mobile-only" id="filterBtn" aria-label="Filter">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm3 5h10v2H7zm3 5h4v2h-4z"/></svg>
+              <span>Filter</span>
+              <b id="filterBadge" class="filter-badge" hidden>0</b>
             </button>
-            <button data-view="list" title="Tampilan daftar">
-              <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
-            </button>
           </div>
-          <select id="sortSelect" aria-label="Urutkan">
-            <option value="default">Urutan: Kategori</option>
-            <option value="tkdn">Nilai TKDN+BMP (Tertinggi)</option>
-            <option value="new">Sertifikat 2026 dulu</option>
-            <option value="name">Nama (A → Z)</option>
-          </select>
+        </div>
+        <div id="activeFilters" class="active-filters mobile-only" hidden></div>
+        <div id="hero" class="hero"></div>
+        <div id="grid" class="grid" aria-live="polite"></div>
+        <div id="empty" class="empty" hidden>
+          <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+          <p>Tidak ada produk yang cocok.</p>
+          <button class="btn" id="resetBtn">Reset filter</button>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Apple.com-style Chapter Navigation + Visible Filter & Status Bars (mobile/tablet) -->
-      <nav class="chapternav" id="chapterNav" aria-label="Kategori produk"></nav>
-      <div class="subfilter-wrap" aria-label="Filter cepat">
-        <div class="subfilter-row" id="mobileFeatureBar"></div>
-        <div class="subfilter-row" id="mobileStatusBar"></div>
-      </div>
-      <div class="active-filters" id="activeFilters" hidden></div>
-
-      <div class="window-body">
-        <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
-        <!-- Finder Sidebar -->
-        <aside class="sidebar" id="sidebar" aria-label="Filter kategori dan sertifikasi">
-          <div class="sheet-handle" aria-hidden="true"><span></span></div>
-          <div class="drawer-head">
-            <div>
-              <strong>Filter &amp; Sertifikasi</strong>
-              <small class="drawer-sub">Sesuaikan kategori, status TKDN/PDN, &amp; fitur</small>
-            </div>
-            <button class="icon-btn" id="drawerClose" aria-label="Tutup menu">×</button>
-          </div>
-          <div class="sidebar-scroll">
-            <div class="side-group">
-              <div class="side-label">Kategori Produk</div>
-              <ul id="categoryList" class="side-list"></ul>
-            </div>
-
-            <div class="side-group">
-              <div class="side-label">Filter TKDN &amp; Fitur</div>
-              <ul id="featureList" class="side-list"></ul>
-            </div>
-
-            <div class="side-group">
-              <div class="side-label">Tingkat TKDN / Status</div>
-              <div id="tierList" class="ink-pills"></div>
-            </div>
-
-            <div class="side-group">
-              <div class="side-label">Referensi Cepat</div>
-              <ul class="side-list">
-                <li><button class="side-item" data-menu="certs">📋 Tabel Nomor Sertifikat</button></li>
-                <li><button class="side-item" data-menu="CrossLinkPrinter">🖨️ Katalog EcoTank (49 Model)</button></li>
-                <li><button class="side-item" data-menu="CrossLinkProj">📽️ Katalog Proyektor (21 Model)</button></li>
-                <li><button class="side-item" data-menu="about">ℹ️ Panduan TKDN &amp; BMP</button></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sheet-footer">
-            <button class="btn" id="sheetReset">Atur Ulang</button>
-            <button class="btn primary" id="sheetApply">Tampilkan produk</button>
-          </div>
-
-          <div class="side-footer">
-            <div>Sumber: Katalog Produk Epson TKDN FY25 &amp; Daftar Sertifikat TKDN (Efektif 28 Agustus 2026)</div>
-          </div>
-        </aside>
-
-        <!-- Content Pane -->
-        <main class="content" id="contentPane">
-          <!-- Hero Banner -->
-          <section class="hero" id="hero"></section>
-
-          <!-- Product Grid -->
-          <section class="grid" id="grid" aria-live="polite"></section>
-
-          <div class="empty" id="empty" hidden>
-            <p>Tidak ada produk TKDN/PDN yang cocok dengan filter ini.</p>
-            <button class="btn" id="resetBtn">Atur ulang filter</button>
-          </div>
-        </main>
-      </div>
-    </div>
-  </div>
-
-  <!-- Floating Compare Dock -->
+  <!-- Compare dock -->
   <div class="dock" id="dock" hidden>
-    <div class="dock-inner">
-      <span class="dock-label">Bandingkan</span>
-      <div class="dock-items" id="dockItems"></div>
-      <button class="btn primary" id="compareBtn">Bandingkan (0)</button>
-      <button class="btn ghost" id="clearCompare" title="Kosongkan">✕</button>
-    </div>
+    <div id="dockItems" class="dock-items"></div>
+    <button class="btn primary" id="compareBtn">Bandingkan</button>
+    <button class="btn ghost" id="clearCompare" aria-label="Kosongkan">✕</button>
   </div>
 
-  <!-- Product Quick Look / Detail & Compare Modal -->
+  <!-- Modal windows -->
   <div class="overlay" id="overlay" hidden>
-    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="window modal" role="dialog" aria-modal="true" id="modal">
       <div class="modal-bar">
-        <div class="traffic">
-          <button class="dot red" id="modalClose" aria-label="Tutup"></button>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-        </div>
-        <span class="modal-title" id="modalTitle">Detail Produk</span>
-        <div class="modal-actions">
-          <button class="btn ghost" data-close>Tutup <span class="kbd">Esc</span></button>
-        </div>
+        <div class="traffic"><button class="r" data-close aria-label="Tutup"></button><i class="y"></i><i class="g"></i></div>
+        <span class="modal-title" id="modalTitle"></span>
+        <span></span>
       </div>
       <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
 
-  <!-- Spotlight Command Palette -->
-  <div class="spotlight" id="spotlight" hidden>
-    <div class="spotlight-box" role="dialog" aria-label="Pencarian cepat">
-      <div class="spotlight-input">
-        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
-        <input id="spotInput" type="text" placeholder="Ketik model, kode SKU, atau nomor sertifikat (mis. L3251, DS-530II, 6109, 10240)…" autocomplete="off" />
-        <span class="kbd">Esc</span>
+  <!-- Spotlight -->
+  <div class="spotlight-wrap" id="spotlight" hidden>
+    <div class="spotlight" role="dialog" aria-label="Pencarian">
+      <div class="spot-input">
+        <svg viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24-1.42 1.42-4.24-4.25A7.5 7.5 0 1 1 10.5 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/></svg>
+        <input id="spotInput" placeholder="Pencarian Spotlight (Model, SKU, No. Sertifikat)" autocomplete="off" />
       </div>
-      <ul class="spotlight-results" id="spotResults"></ul>
+      <ul id="spotResults" class="spot-results"></ul>
     </div>
   </div>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="toast" id="toast" role="status"></div>
 
   <script src="assets/data/products.js"></script>
   <script src="assets/js/app.js"></script>

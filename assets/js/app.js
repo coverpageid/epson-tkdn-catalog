@@ -26,13 +26,13 @@
 
   const CATS = [
     { id: "all", label: "Semua Produk", desc: "Seluruh lini produk Epson Indonesia bersertifikat TKDN Kemenperin RI & Produk Dalam Negeri (PDN) untuk pengadaan pemerintah, BUMN, pendidikan, dan korporasi." },
-    { id: "ecotank", label: "Printer Ink Tank (EcoTank)", desc: "Printer tangki tinta A4 & A3+ dengan nilai TKDN+BMP tinggi hingga 75,28% (L3251, L3211, L15150, M15140, M15180, dll.)." },
-    { id: "workforce", label: "Printer Bisnis (WorkForce)", desc: "Printer bisnis & departemen PrecisionCore Heat-Free (WF-Pro, RIPS, dan WorkForce Enterprise AM-Series / WF-C21000)." },
-    { id: "scanner", label: "Pemindai Dokumen (Scanner)", desc: "Document scanner kecepatan tinggi A4 & A3 (DS-Series & ES-Series) bersertifikat TKDN hingga 55,91% dan PDN." },
+    { id: "ecotank", label: "EcoTank · Ink Tank", desc: "Printer tangki tinta A4 & A3+ dengan nilai TKDN+BMP tinggi hingga 75,28% (L3251, L3211, L15150, M15140, M15180, dll.)." },
+    { id: "workforce", label: "WorkForce · Bisnis", desc: "Printer bisnis & departemen PrecisionCore Heat-Free (WF-Pro, RIPS, dan WorkForce Enterprise AM-Series / WF-C21000)." },
+    { id: "scanner", label: "Document Scanner", desc: "Document scanner kecepatan tinggi A4 & A3 (DS-Series & ES-Series) bersertifikat TKDN hingga 55,91% dan PDN." },
     { id: "dotmatrix", label: "Dot Matrix & Passbook", desc: "Printer dot matrix (LQ-310, LX-310, LQ-2190) dan printer buku tabungan perbankan (PLQ-35, PLQ-50) bersertifikat TKDN." },
-    { id: "label", label: "Printer Label (ColorWorks)", desc: "Printer label warna industri on-demand 4 inci & 8 inci (CW-C6050A/P, CW-C6550A/P) bersertifikat TKDN." },
-    { id: "plotter", label: "Plotter & Sublimasi (SureColor)", desc: "Plotter teknis CAD/GIS 24\"–44\" (SC-T Series) dan printer sublimasi tekstil (SC-F530, SC-F531) TKDN & PDN." },
-    { id: "projector", label: "Proyektor Bisnis (3LCD)", desc: "Proyektor bisnis & pendidikan 3LCD XGA bersertifikat TKDN: EB-E600 (55,70%) dan EB-X600 (55,02%)." },
+    { id: "label", label: "ColorWorks · Label", desc: "Printer label warna industri on-demand 4 inci & 8 inci (CW-C6050A/P, CW-C6550A/P) bersertifikat TKDN." },
+    { id: "plotter", label: "SureColor · Plotter", desc: "Plotter teknis CAD/GIS 24\"–44\" (SC-T Series) dan printer sublimasi tekstil (SC-F530, SC-F531) TKDN & PDN." },
+    { id: "projector", label: "Proyektor 3LCD", desc: "Proyektor bisnis & pendidikan 3LCD XGA bersertifikat TKDN: EB-E600 (55,70%) dan EB-X600 (55,02%)." },
     { id: "ink", label: "Tinta Botol Orisinal", desc: "Botol tinta orisinal Epson seri 003 dan T664 (CMYK) bersertifikat TKDN Kemenperin RI (Mei 2026)." },
   ];
 
@@ -224,9 +224,9 @@
           <div class="card-head"><div><div class="series">${esc(CAT_SHORT[p.category] || p.category)} · SKU ${esc(p.sku)}</div><h3>${esc(p.model)}</h3></div></div>
           <p>${esc(p.tagline)}</p>
           <div class="pills">${pills(p)}</div>
-          <div class="card-actions" style="display:flex;justify-content:space-between;align-items:center;gap:6px">
+          <div class="card-actions">
             <button class="btn small" data-open="${esc(p.model)}">Lihat detail</button>
-            ${p.status === "TKDN" ? `<button class="btn ghost small" style="font-size:11px;padding:4px 8px" data-copy="${esc(p.certNo)}" title="Salin Nomor Sertifikat: ${esc(p.certNo)}">Salin Sertifikat</button>` : ""}
+            ${p.status === "TKDN" ? `<button class="btn small" style="flex:none" data-copy="${esc(p.certNo)}" title="Salin Nomor Sertifikat: ${esc(p.certNo)}">Salin Sertifikat</button>` : ""}
           </div>
         </div>
       </article>`).join("");
