@@ -1,6 +1,6 @@
-# Katalog Digital Produk TKDN & PDN Epson Indonesia
+# Katalog Digital Produk TKDN & PDN Epson
 
-Portal katalog digital bergaya macOS / Apple.com untuk seluruh **79 produk Epson Indonesia** yang telah bersertifikat **TKDN Kemenperin RI (67 Produk)** dan **PDN / Produk Dalam Negeri (12 Produk)**.
+Portal katalog digital bergaya macOS / Apple.com untuk seluruh **79 produk Epson** yang telah bersertifikat **TKDN Kemenperin RI (67 Produk)** dan **PDN / Produk Dalam Negeri (12 Produk)**.
 
 ## Cakupan 8 Kategori Produk
 1. **Printer Ink Tank (EcoTank):** `L3211`, `L3251` (75,28%), `L6550`, `L6580`, `L15150`, `L15160`, `L15180`, `M15140`, `M15180`

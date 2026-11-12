@@ -25,7 +25,7 @@
   const svg = (k) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[k] || ICON.all}</svg>`;
 
   const CATS = [
-    { id: "all", label: "Semua Produk", desc: "Seluruh lini produk Epson Indonesia bersertifikat TKDN Kemenperin RI & Produk Dalam Negeri (PDN) untuk pengadaan pemerintah, BUMN, pendidikan dan korporasi." },
+    { id: "all", label: "Semua Produk", desc: "Seluruh lini produk Epson bersertifikat TKDN Kemenperin RI & Produk Dalam Negeri (PDN) untuk pengadaan pemerintah, BUMN, pendidikan dan korporasi." },
     { id: "ecotank", label: "EcoTank · Ink Tank", desc: "Printer tangki tinta A4 & A3+ dengan nilai TKDN+BMP tinggi hingga 75,28% (L3251, L3211, L15150, M15140, M15180, dll.)." },
     { id: "workforce", label: "WorkForce · Bisnis", desc: "Printer bisnis & departemen PrecisionCore Heat-Free (WF-Pro, RIPS dan WorkForce Enterprise AM-Series / WF-C21000)." },
     { id: "scanner", label: "Document Scanner", desc: "Document scanner kecepatan tinggi A4 & A3 (DS-Series & ES-Series) bersertifikat TKDN hingga 55,91% dan PDN." },
@@ -385,7 +385,7 @@
     const html = `<div class="compare-wrap">
       <div style="padding:14px 18px 4px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
         <div>
-          <strong>Daftar Lengkap Nomor Sertifikat TKDN & Produk PDN Epson Indonesia</strong>
+          <strong>Daftar Lengkap Nomor Sertifikat TKDN & Produk PDN Epson</strong>
           <div class="muted" style="font-size:12px">Valid efektif per 28 Agustus 2026 · Klik nama model untuk membuka spesifikasi lengkap atau klik "Salin" untuk menyalin nomor sertifikat.</div>
         </div>
       </div>
@@ -410,8 +410,8 @@
 
   function openAbout() {
     openModal("Tentang Katalog TKDN & PDN Epson", `<div class="about">
-      <h2>Katalog Digital Produk TKDN & PDN Epson Indonesia</h2>
-      <p>Portal referensi pengadaan yang merangkum seluruh <b>${P.length} produk Epson Indonesia</b> yang telah mengantongi sertifikat <b>TKDN (Tingkat Komponen Dalam Negeri)</b> dari Kementerian Perindustrian RI maupun berstatus <b>PDN (Produk Dalam Negeri)</b>.</p>
+      <h2>Katalog Digital Produk TKDN & PDN Epson</h2>
+      <p>Portal referensi pengadaan yang merangkum seluruh <b>${P.length} produk Epson</b> yang telah mengantongi sertifikat <b>TKDN (Tingkat Komponen Dalam Negeri)</b> dari Kementerian Perindustrian RI maupun berstatus <b>PDN (Produk Dalam Negeri)</b>.</p>
       <h4>Ketentuan Pengadaan Barang/Jasa Pemerintah (PP No. 29 Tahun 2018 & Perpres No. 12 Tahun 2021)</h4>
       <ul>
         <li>Apabila terdapat produk dengan penjumlahan <b>Nilai TKDN + Nilai BMP (Bobot Manfaat Perusahaan) ≥ 40%</b> dan Nilai TKDN ≥ 25%, maka instansi wajib membeli produk dalam negeri tersebut.</li>
