@@ -107,11 +107,11 @@ CURATED = {
     "EB-X600": ("Proyektor EB-X600", "Proyektor 3LCD XGA 3.600 lumens bersertifikat TKDN (55,02%) dengan port RJ45 LAN & opsi Wi-Fi.", "3LCD · XGA (1024×768)", "3.600 Lumens", "Kontras 16.000:1", "HDMI, RJ45 LAN, 2× VGA, USB-A/B"),
 
     # 8. Ink Bottles
-    "T6641 Black":   ("Tinta Botol Epson T6641 (Black)", "Botol tinta hitam orisinal 70 ml seri 664 bersertifikat TKDN (25,23%) untuk L121 / L360 / L1300.", "Tinta Dye Hitam · 70 ml", "Seri 664", "4.000 hal. hitam", "Botol 70 ml"),
+    "T6641 Black":   ("Tinta Botol Epson T6641 (Black)", "Botol tinta hitam orisinal 70 ml seri 664 bersertifikat TKDN (25,23%) untuk L121.", "Tinta Dye Hitam · 70 ml", "Seri 664", "4.000 hal. hitam", "Botol 70 ml"),
     "T6642 Cyan":    ("Tinta Botol Epson T6642 (Cyan)", "Botol tinta cyan orisinal 70 ml seri 664 bersertifikat TKDN (25,25%).", "Tinta Dye Cyan · 70 ml", "Seri 664", "6.500 hal. warna", "Botol 70 ml"),
     "T6643 Magenta": ("Tinta Botol Epson T6643 (Magenta)", "Botol tinta magenta orisinal 70 ml seri 664 bersertifikat TKDN (25,27%).", "Tinta Dye Magenta · 70 ml", "Seri 664", "6.500 hal. warna", "Botol 70 ml"),
     "T6644 Yellow":  ("Tinta Botol Epson T6644 (Yellow)", "Botol tinta kuning orisinal 70 ml seri 664 bersertifikat TKDN (25,20%).", "Tinta Dye Yellow · 70 ml", "Seri 664", "6.500 hal. warna", "Botol 70 ml"),
-    "003 Black":     ("Tinta Botol Epson 003 (Black)", "Botol tinta hitam anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,65%) untuk L3210 / L3211 / L3250 / L3251 / L5290.", "Tinta Dye Hitam · 65 ml", "Seri 003", "4.500 hal. hitam", "Botol Anti-Tumpah 65 ml"),
+    "003 Black":     ("Tinta Botol Epson 003 (Black)", "Botol tinta hitam anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,65%) untuk L3211 / L3251 / L3311 / L3351 / L5290 / L5391.", "Tinta Dye Hitam · 65 ml", "Seri 003", "4.500 hal. hitam", "Botol Anti-Tumpah 65 ml"),
     "003 Cyan":      ("Tinta Botol Epson 003 (Cyan)", "Botol tinta cyan anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,25%).", "Tinta Dye Cyan · 65 ml", "Seri 003", "7.500 hal. warna", "Botol Anti-Tumpah 65 ml"),
     "003 Magenta":   ("Tinta Botol Epson 003 (Magenta)", "Botol tinta magenta anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,72%).", "Tinta Dye Magenta · 65 ml", "Seri 003", "7.500 hal. warna", "Botol Anti-Tumpah 65 ml"),
     "003 Yellow":    ("Tinta Botol Epson 003 (Yellow)", "Botol tinta kuning anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,54%).", "Tinta Dye Yellow · 65 ml", "Seri 003", "7.500 hal. warna", "Botol Anti-Tumpah 65 ml"),
@@ -255,7 +255,7 @@ def main():
                 "Kode SKU": r["tkdnCode"],
                 "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)" if "003" in model else "70 ml",
                 "Hasil Cetak (Yield)": speed_summary,
-                "Kompatibilitas Printer": "EcoTank L1110, L1210, L1250, L3110, L3150, L3210, L3211, L3250, L3251, L5190, L5290" if "003" in model else "EcoTank L120, L121, L220, L310, L360, L365, L380, L385, L485, L565, L1300",
+                "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590" if "003" in model else "EcoTank L121",
             }
             r["url"] = "https://www.epson.co.id/consumables"
         else:

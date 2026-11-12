@@ -8763,7 +8763,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V399",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "7.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L1110, L1210, L1250, L3110, L3150, L3210, L3211, L3250, L3251, L5190, L5290"
+    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8774,7 +8774,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/consumables",
   "image": "assets/img/C13T00V199.jpg",
   "category": "ink",
-  "tagline": "Botol tinta hitam anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,65%) untuk L3210 / L3211 / L3250 / L3251 / L5290.",
+  "tagline": "Botol tinta hitam anti-tumpah 65 ml seri 003 bersertifikat TKDN (25,65%) untuk L3211 / L3251 / L3311 / L3351 / L5290 / L5391.",
   "status": "TKDN",
   "tkdnVal": "25,65%",
   "bmpVal": "0,00%",
@@ -8805,7 +8805,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V199",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "4.500 hal. hitam",
-    "Kompatibilitas Printer": "EcoTank L1110, L1210, L1250, L3110, L3150, L3210, L3211, L3250, L3251, L5190, L5290"
+    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8847,7 +8847,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V499",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "7.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L1110, L1210, L1250, L3110, L3150, L3210, L3211, L3250, L3251, L5190, L5290"
+    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8889,7 +8889,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T664399",
     "Kapasitas": "70 ml",
     "Hasil Cetak (Yield)": "6.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L120, L121, L220, L310, L360, L365, L380, L385, L485, L565, L1300"
+    "Kompatibilitas Printer": "EcoTank L121"
    }
   }
  },
@@ -8931,7 +8931,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V299",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "7.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L1110, L1210, L1250, L3110, L3150, L3210, L3211, L3250, L3251, L5190, L5290"
+    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8973,7 +8973,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T664299",
     "Kapasitas": "70 ml",
     "Hasil Cetak (Yield)": "6.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L120, L121, L220, L310, L360, L365, L380, L385, L485, L565, L1300"
+    "Kompatibilitas Printer": "EcoTank L121"
    }
   }
  },
@@ -8984,7 +8984,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/consumables",
   "image": "assets/img/C13T664199.jpg",
   "category": "ink",
-  "tagline": "Botol tinta hitam orisinal 70 ml seri 664 bersertifikat TKDN (25,23%) untuk L121 / L360 / L1300.",
+  "tagline": "Botol tinta hitam orisinal 70 ml seri 664 bersertifikat TKDN (25,23%) untuk L121.",
   "status": "TKDN",
   "tkdnVal": "25,23%",
   "bmpVal": "0,00%",
@@ -9015,7 +9015,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T664199",
     "Kapasitas": "70 ml",
     "Hasil Cetak (Yield)": "4.000 hal. hitam",
-    "Kompatibilitas Printer": "EcoTank L120, L121, L220, L310, L360, L365, L380, L385, L485, L565, L1300"
+    "Kompatibilitas Printer": "EcoTank L121"
    }
   }
  },
@@ -9057,7 +9057,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T664499",
     "Kapasitas": "70 ml",
     "Hasil Cetak (Yield)": "6.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L120, L121, L220, L310, L360, L365, L380, L385, L485, L565, L1300"
+    "Kompatibilitas Printer": "EcoTank L121"
    }
   }
  }
