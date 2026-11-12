@@ -22,15 +22,15 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 # Curated Indonesian tagline & key highlights for all 79 TKDN & PDN products
 CURATED = {
     # 1. EcoTank Ink Tank Printers
-    "L3211":  ("EcoTank L3211", "Printer All-in-One A4 TKDN (66,45%) untuk cetak, pindai, dan salin dokumen harian yang super hemat.", "Print · Scan · Copy", "A4", "33 / 15 ppm (10 / 5 ipm)", "USB 2.0"),
+    "L3211":  ("EcoTank L3211", "Printer All-in-One A4 TKDN (66,45%) untuk cetak, pindai dan salin dokumen harian yang super hemat.", "Print · Scan · Copy", "A4", "33 / 15 ppm (10 / 5 ipm)", "USB 2.0"),
     "L3251":  ("EcoTank L3251", "Printer All-in-One A4 Wi-Fi dengan nilai TKDN tertinggi (75,28%) dan dukungan Epson Smart Panel.", "Print · Scan · Copy · Wi-Fi", "A4", "33 / 15 ppm (10 / 5 ipm)", "USB 2.0, Wi-Fi, Wi-Fi Direct"),
-    "L6550":  ("EcoTank L6550", "Printer bisnis A4/A3 dengan tinta pigmen DURABrite ET, duplex otomatis, ADF, dan 2 kaset kertas.", "Print · Scan · Copy · Fax · ADF", "A4 / A3", "25 / 12 ipm", "Wi-Fi, Ethernet, USB"),
+    "L6550":  ("EcoTank L6550", "Printer bisnis A4/A3 dengan tinta pigmen DURABrite ET, duplex otomatis, ADF dan 2 kaset kertas.", "Print · Scan · Copy · Fax · ADF", "A4 / A3", "25 / 12 ipm", "Wi-Fi, Ethernet, USB"),
     "L6580":  ("EcoTank L6580", "Printer bisnis berkinerja tinggi dengan kecepatan cetak 25 ipm warna/hitam dan layar sentuh 4,3\".", "Print · Scan · Copy · Fax · ADF", "A4 / A3", "25 / 25 ipm", "Wi-Fi, Ethernet, USB"),
     "L15150": ("EcoTank L15150", "Printer bisnis A3+ penuh (cetak, pindai, salin, faks, duplex A3) dengan tinta pigmen 4 warna.", "Print · Scan · Copy · Fax · A3", "A3+", "25 / 12 ipm", "Wi-Fi, Ethernet, USB"),
     "L15160": ("EcoTank L15160", "Printer bisnis A3+ berkecepatan tinggi 25 ipm warna & monokrom dengan tinta pigmen penuh.", "Print · Scan · Copy · Fax · A3", "A3+", "25 / 25 ipm", "Wi-Fi, Ethernet, USB"),
-    "L15180": ("EcoTank L15180", "Flagship EcoTank A3+ dengan kecepatan 25 ipm, duplex scan, layar sentuh 4,3\", dan PCL/PostScript.", "Print · Scan · Copy · Fax · A3", "A3+", "25 / 25 ipm", "Wi-Fi, Ethernet, USB"),
+    "L15180": ("EcoTank L15180", "Flagship EcoTank A3+ dengan kecepatan 25 ipm, duplex scan, layar sentuh 4,3\" dan PCL/PostScript.", "Print · Scan · Copy · Fax · A3", "A3+", "25 / 25 ipm", "Wi-Fi, Ethernet, USB"),
     "M15140": ("EcoTank M15140", "Printer monokrom A3+ TKDN (69,82%) dengan kecepatan 25 ipm dan cetak bolak-balik otomatis A3.", "Print · Scan · Copy · Mono A3", "A3+", "25 ipm (32 ppm)", "Wi-Fi, Ethernet, USB"),
-    "M15180": ("EcoTank M15180", "Printer monokrom A3+ kelas bisnis (TKDN 69,82%) dengan ADF duplex, faks, dan dukungan PCL.", "Print · Scan · Copy · Fax · Mono A3", "A3+", "25 ipm (32 ppm)", "Wi-Fi, Ethernet, USB"),
+    "M15180": ("EcoTank M15180", "Printer monokrom A3+ kelas bisnis (TKDN 69,82%) dengan ADF duplex, faks dan dukungan PCL.", "Print · Scan · Copy · Fax · Mono A3", "A3+", "25 ipm (32 ppm)", "Wi-Fi, Ethernet, USB"),
 
     # 2. WorkForce Pro & Enterprise Business Inkjet
     "WF-C5390": ("WorkForce Pro WF-C5390", "Printer bisnis warna A4 single-function berteknologi PrecisionCore Heat-Free, cepat dan hemat daya.", "Print · Duplex", "A4", "25 / 25 ipm", "Wi-Fi, Ethernet, USB"),
@@ -68,7 +68,7 @@ CURATED = {
     "DS-32000":  ("WorkForce DS-32000", "Flagship scanner dokumen A3 kecepatan 90 ppm / 180 ipm dengan sasis putar fleksibel.", "Sheet-fed Duplex A3", "A3", "90 ppm / 180 ipm", "USB 3.2 Gen 1"),
     "ES-C320W":  ("WorkForce ES-C320W", "Scanner dokumen ringkas berfitur Wi-Fi untuk kantor modern (Produk Dalam Negeri).", "Sheet-fed Duplex · Wi-Fi", "A4", "30 ppm / 60 ipm", "Wi-Fi, Wi-Fi Direct, USB 2.0"),
     "ES-C380W":  ("WorkForce ES-C380W", "Scanner ringkas Wi-Fi mandiri dengan layar sentuh 2,4\" & Epson Connect (PDN).", "Sheet-fed Duplex · Wi-Fi", "A4", "30 ppm / 60 ipm", "Wi-Fi, Wi-Fi Direct, USB 3.2"),
-    "DS-790WN":  ("WorkForce DS-790WN", "Scanner jaringan kelas korporat dengan Wi-Fi, Ethernet RJ45, dan layar sentuh 4,3\" (PDN).", "Sheet-fed Duplex · Network", "A4", "45 ppm / 90 ipm", "Wi-Fi, Ethernet, USB 3.2"),
+    "DS-790WN":  ("WorkForce DS-790WN", "Scanner jaringan kelas korporat dengan Wi-Fi, Ethernet RJ45 dan layar sentuh 4,3\" (PDN).", "Sheet-fed Duplex · Network", "A4", "45 ppm / 90 ipm", "Wi-Fi, Ethernet, USB 3.2"),
     "Perfection V39II": ("Perfection V39II", "Scanner foto & dokumen flatbed A4 tipis bertenaga USB 4.800 dpi (Produk Dalam Negeri).", "Flatbed Scanner", "A4", "10 detik / halaman", "USB 2.0 Micro-B"),
 
     # 4. Dot Matrix & Passbook
@@ -85,7 +85,7 @@ CURATED = {
     "CW-C6550P": ("ColorWorks CW-C6550P", "Printer label warna industri lebar 8 inci dilengkapi pengupas label otomatis (Peeler).", "Label Warna 8\" · Peeler", "Lebar 8,5\"", "85 mm/detik", "Ethernet, USB 2.0"),
 
     # 6. SureColor Technical Plotter & Sublimation
-    "SC-T3130":   ("SureColor SC-T3130", "Plotter teknis CAD/GIS ukuran 24 inci (A1) dengan stand, Wi-Fi, dan tinta pigmen UltraChrome XD2.", "Plotter Teknis 24\" (A1)", "24\" (A1)", "34 detik / A1", "Wi-Fi, Ethernet, USB"),
+    "SC-T3130":   ("SureColor SC-T3130", "Plotter teknis CAD/GIS ukuran 24 inci (A1) dengan stand, Wi-Fi dan tinta pigmen UltraChrome XD2.", "Plotter Teknis 24\" (A1)", "24\" (A1)", "34 detik / A1", "Wi-Fi, Ethernet, USB"),
     "SC-T3130N":  ("SureColor SC-T3130N", "Plotter teknis 24 inci (A1) model desktop (tanpa stand) yang hemat ruang dengan Wi-Fi.", "Plotter Teknis 24\" Desktop", "24\" (A1)", "34 detik / A1", "Wi-Fi, Ethernet, USB"),
     "SC-T3130X":  ("SureColor SC-T3130X", "Plotter teknis 24 inci (A1) dengan sistem tangki tinta isi ulang (Ink Tank) berbiaya rendah.", "Plotter Ink Tank 24\" (A1)", "24\" (A1)", "34 detik / A1", "Wi-Fi, Ethernet, USB"),
     "SC-T3130M":  ("SureColor SC-T3130M", "Plotter multifungsi 24 inci (A1) terintegrasi dengan pemindai (scanner) CIS 600 dpi.", "Plotter + Scanner 24\" (A1)", "24\" (A1)", "34 detik / A1", "Wi-Fi, Ethernet, USB"),
@@ -255,7 +255,7 @@ def main():
                 "Kode SKU": r["tkdnCode"],
                 "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)" if "003" in model else "70 ml",
                 "Hasil Cetak (Yield)": speed_summary,
-                "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590" if "003" in model else "EcoTank L121",
+                "Kompatibilitas Printer": "EcoTank L11050, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590" if "003" in model else "EcoTank L121",
             }
             r["url"] = "https://www.epson.co.id/consumables"
         else:

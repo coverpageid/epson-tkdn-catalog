@@ -25,9 +25,9 @@
   const svg = (k) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[k] || ICON.all}</svg>`;
 
   const CATS = [
-    { id: "all", label: "Semua Produk", desc: "Seluruh lini produk Epson Indonesia bersertifikat TKDN Kemenperin RI & Produk Dalam Negeri (PDN) untuk pengadaan pemerintah, BUMN, pendidikan, dan korporasi." },
+    { id: "all", label: "Semua Produk", desc: "Seluruh lini produk Epson Indonesia bersertifikat TKDN Kemenperin RI & Produk Dalam Negeri (PDN) untuk pengadaan pemerintah, BUMN, pendidikan dan korporasi." },
     { id: "ecotank", label: "EcoTank · Ink Tank", desc: "Printer tangki tinta A4 & A3+ dengan nilai TKDN+BMP tinggi hingga 75,28% (L3251, L3211, L15150, M15140, M15180, dll.)." },
-    { id: "workforce", label: "WorkForce · Bisnis", desc: "Printer bisnis & departemen PrecisionCore Heat-Free (WF-Pro, RIPS, dan WorkForce Enterprise AM-Series / WF-C21000)." },
+    { id: "workforce", label: "WorkForce · Bisnis", desc: "Printer bisnis & departemen PrecisionCore Heat-Free (WF-Pro, RIPS dan WorkForce Enterprise AM-Series / WF-C21000)." },
     { id: "scanner", label: "Document Scanner", desc: "Document scanner kecepatan tinggi A4 & A3 (DS-Series & ES-Series) bersertifikat TKDN hingga 55,91% dan PDN." },
     { id: "dotmatrix", label: "Dot Matrix & Passbook", desc: "Printer dot matrix (LQ-310, LX-310, LQ-2190) dan printer buku tabungan perbankan (PLQ-35, PLQ-50) bersertifikat TKDN." },
     { id: "label", label: "ColorWorks · Label", desc: "Printer label warna industri on-demand 4 inci & 8 inci (CW-C6050A/P, CW-C6550A/P) bersertifikat TKDN." },

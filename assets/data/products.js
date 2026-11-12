@@ -275,7 +275,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-Monochrome-M15180-A3-Wi-Fi-Duplex-Multi-Function-Ink-Tank/p/C11CJ41506",
   "image": "assets/img/C11CJ41506.jpg",
   "category": "ecotank",
-  "tagline": "Printer monokrom A3+ kelas bisnis (TKDN 69,82%) dengan ADF duplex, faks, dan dukungan PCL.",
+  "tagline": "Printer monokrom A3+ kelas bisnis (TKDN 69,82%) dengan ADF duplex, faks dan dukungan PCL.",
   "status": "TKDN",
   "tkdnVal": "56,17%",
   "bmpVal": "13,65%",
@@ -742,7 +742,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-L15180-A3-Wi-Fi-Duplex-Multi-Function-Ink-Tank/p/C11CH71506",
   "image": "assets/img/C11CH71506.jpg",
   "category": "ecotank",
-  "tagline": "Flagship EcoTank A3+ dengan kecepatan 25 ipm, duplex scan, layar sentuh 4,3\", dan PCL/PostScript.",
+  "tagline": "Flagship EcoTank A3+ dengan kecepatan 25 ipm, duplex scan, layar sentuh 4,3\" dan PCL/PostScript.",
   "status": "TKDN",
   "tkdnVal": "53,37%",
   "bmpVal": "13,65%",
@@ -906,7 +906,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Ink-Tank/Ink-Tank-System/Epson-EcoTank-L3211-A4-All-in-One-Ink-Tank-Printer/p/C11CJ68504",
   "image": "assets/img/C11CJ68504.jpg",
   "category": "ecotank",
-  "tagline": "Printer All-in-One A4 TKDN (66,45%) untuk cetak, pindai, dan salin dokumen harian yang super hemat.",
+  "tagline": "Printer All-in-One A4 TKDN (66,45%) untuk cetak, pindai dan salin dokumen harian yang super hemat.",
   "status": "TKDN",
   "tkdnVal": "52,80%",
   "bmpVal": "13,65%",
@@ -1013,7 +1013,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Untuk-Rumah/Printer-untuk-Rumah/Work-Colour-Ink-Tank-Printers/Printer-Epson-EcoTank-L6550-A4-Colour-Wi-Fi-Duplex-All-in-One-Ink-Tank/p/C11CJ30502",
   "image": "assets/img/C11CJ30502.jpg",
   "category": "ecotank",
-  "tagline": "Printer bisnis A4/A3 dengan tinta pigmen DURABrite ET, duplex otomatis, ADF, dan 2 kaset kertas.",
+  "tagline": "Printer bisnis A4/A3 dengan tinta pigmen DURABrite ET, duplex otomatis, ADF dan 2 kaset kertas.",
   "status": "TKDN",
   "tkdnVal": "30,64%",
   "bmpVal": "13,65%",
@@ -5520,7 +5520,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Scanners/Sheetfed-Scanners/Epson-WorkForce-DS-790WN-A4-Duplex-Sheet-fed-Document-Scanner/p/B11B265502",
   "image": "assets/img/B11B265502.jpg",
   "category": "scanner",
-  "tagline": "Scanner jaringan kelas korporat dengan Wi-Fi, Ethernet RJ45, dan layar sentuh 4,3\" (PDN).",
+  "tagline": "Scanner jaringan kelas korporat dengan Wi-Fi, Ethernet RJ45 dan layar sentuh 4,3\" (PDN).",
   "status": "PDN",
   "tkdnVal": "—",
   "bmpVal": "—",
@@ -7180,7 +7180,7 @@ window.PRODUCTS = [
   "url": "https://www.epson.co.id/Large-Format-Printers/T-Series/Epson-SureColor-SC-T3130-/p/C11CF11403",
   "image": "assets/img/C11CF11403.jpg",
   "category": "plotter",
-  "tagline": "Plotter teknis CAD/GIS ukuran 24 inci (A1) dengan stand, Wi-Fi, dan tinta pigmen UltraChrome XD2.",
+  "tagline": "Plotter teknis CAD/GIS ukuran 24 inci (A1) dengan stand, Wi-Fi dan tinta pigmen UltraChrome XD2.",
   "status": "TKDN",
   "tkdnVal": "25,29%",
   "bmpVal": "13,65%",
@@ -8763,7 +8763,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V399",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "7.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
+    "Kompatibilitas Printer": "EcoTank L11050, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8805,7 +8805,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V199",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "4.500 hal. hitam",
-    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
+    "Kompatibilitas Printer": "EcoTank L11050, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8847,7 +8847,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V499",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "7.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
+    "Kompatibilitas Printer": "EcoTank L11050, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
@@ -8931,7 +8931,7 @@ window.PRODUCTS = [
     "Kode SKU": "C13T00V299",
     "Kapasitas": "65 ml (Botol Anti-Tumpah Key-Lock)",
     "Hasil Cetak (Yield)": "7.500 hal. warna",
-    "Kompatibilitas Printer": "EcoTank L11050, L1250, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
+    "Kompatibilitas Printer": "EcoTank L11050, L1256, L1310, L1350, L3211, L3216, L3251, L3256, L3311, L3316, L3351, L3356, L3550, L3556, L5290, L5296, L5391, L5590"
    }
   }
  },
