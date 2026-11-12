@@ -420,6 +420,8 @@
       </ul>
       <h4>Pintasan Keyboard</h4>
       <ul><li><b>⌘K / Ctrl+K</b> atau <b>/</b> — Pencarian cepat (Spotlight)</li><li><b>Esc</b> — Tutup jendela</li></ul>
+      <p class="note">Harga tidak tersedia di situs resmi. Spesifikasi dapat berubah sewaktu-waktu; selalu verifikasi di situs resmi Epson.
+      Epson dan gambar produk adalah merek/hak milik Seiko Epson Corporation. Situs ini tidak berafiliasi dengan Epson.</p>
     </div>`, "about");
   }
 
