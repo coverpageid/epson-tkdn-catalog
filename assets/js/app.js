@@ -224,6 +224,7 @@
           <div class="card-head"><div><div class="series">${esc(CAT_SHORT[p.category] || p.category)} · SKU ${esc(p.sku)}</div><h3>${esc(p.model)}</h3></div></div>
           <p>${esc(p.tagline)}</p>
           <div class="pills">${pills(p)}</div>
+          ${p.status === "TKDN" && p.certNo ? `<button class="cert-link card-cert" data-cert="${esc(p.certNo)}" title="Lihat keterangan sertifikat">No. Sertifikat ${esc(p.certNo)} ↗</button>` : ""}
           <div class="card-actions">
             <button class="btn small" data-open="${esc(p.model)}">Lihat detail</button>
             ${p.status === "TKDN" ? `<button class="btn small" style="flex:none" data-copy="${esc(p.certNo)}" title="Salin Nomor Sertifikat: ${esc(p.certNo)}">Salin Sertifikat</button>` : ""}
@@ -291,7 +292,7 @@
     const ks = [
       ["Status Pengadaan", p.status === "TKDN" ? `TKDN (${p.totalVal})` : "PDN (Produk Dalam Negeri)"],
       ["Nilai TKDN / BMP", p.status === "TKDN" ? `${p.tkdnVal} + ${p.bmpVal}` : "—"],
-      ["Nomor Sertifikat", p.certNo],
+      ["Nomor Sertifikat", p.status === "TKDN" ? `<button class="cert-link" data-cert="${esc(p.certNo)}" title="Lihat keterangan sertifikat">${esc(p.certNo)} ↗</button>` : p.certNo, true],
       ["Kode Produk / SKU", p.sku],
       ["Fungsi Utama", p.fnSummary],
       ["Format / Ukuran", p.fmtSummary],
@@ -308,10 +309,10 @@
         <h2>${esc(p.name)}</h2>
         <p class="tagline">${esc(p.tagline)}</p>
         <div class="pills">${pills(p)}</div>
-        <div class="keyspecs">${ks.map(([k, v]) => `<div class="keyspec"><small>${esc(k)}</small><b>${esc(v)}</b></div>`).join("")}</div>
+        <div class="keyspecs">${ks.map(([k, v, raw]) => `<div class="keyspec"><small>${esc(k)}</small><b>${raw ? v : esc(v)}</b></div>`).join("")}</div>
         ${p.status === "TKDN" ? `
         <div class="keyspec" style="display:flex;align-items:center;gap:12px">
-          <div><small>Nomor Sertifikat TKDN Kemenperin RI</small><b>${esc(p.certNo)}</b></div>
+          <div><small>Nomor Sertifikat TKDN Kemenperin RI</small><b><button class="cert-link" data-cert="${esc(p.certNo)}" title="Lihat keterangan sertifikat">${esc(p.certNo)} ↗</button></b></div>
           <button class="btn small" style="flex:none;margin-left:auto" data-copy="${esc(p.certNo)}">Salin No. Sertifikat</button>
         </div>` : ""}
         <div class="tabs"><button class="active">Spesifikasi Lengkap & Sertifikasi</button></div>
@@ -341,7 +342,7 @@
       ["Nilai TKDN", (p) => p.tkdnVal],
       ["Nilai BMP", (p) => p.bmpVal],
       ["Total TKDN + BMP", (p) => `<span class="yes">${esc(p.totalVal)}</span>`, true],
-      ["Nomor Sertifikat", (p) => p.certNo],
+      ["Nomor Sertifikat", (p) => `<button class="cert-link" data-cert="${esc(p.certNo)}" title="Lihat keterangan sertifikat">${esc(p.certNo)} ↗</button>`, true],
       ["Kode Produk / SKU", (p) => p.sku],
       ["Fungsi Utama", (p) => p.fnSummary],
       ["Format / Ukuran", (p) => p.fmtSummary],
@@ -377,7 +378,7 @@
         <td style="text-align:right;font-weight:700;color:var(--accent)">${esc(p.totalVal)}</td>
         <td>
           <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
-            <span style="font-size:12px">${esc(p.certNo)}</span>
+            <button class="cert-link" style="font-size:12px;text-align:left;word-break:break-all" data-cert="${esc(p.certNo)}" title="Lihat keterangan sertifikat">${esc(p.certNo)} ↗</button>
             ${p.status === "TKDN" ? `<button class="btn ghost small" style="padding:2px 7px;font-size:11px" data-copy="${esc(p.certNo)}">Salin</button>` : ""}
           </div>
         </td>
@@ -386,7 +387,7 @@
       <div style="padding:14px 18px 4px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
         <div>
           <strong>Daftar Lengkap Nomor Sertifikat TKDN & Produk PDN Epson</strong>
-          <div class="muted" style="font-size:12px">Valid efektif per 28 Agustus 2026 · Klik nama model untuk membuka spesifikasi lengkap atau klik "Salin" untuk menyalin nomor sertifikat.</div>
+          <div class="muted" style="font-size:12px">Valid efektif per 28 Agustus 2026 · Klik <b>nomor sertifikat</b> untuk melihat keterangan sertifikat, klik nama model untuk spesifikasi lengkap, atau "Salin" untuk menyalin nomor.</div>
         </div>
       </div>
       <table class="compare" style="font-size:13px">
@@ -440,6 +441,7 @@
 
   /* ---------- Router ---------- */
   function route() {
+    if (location.hash.startsWith("#/cert/")) return; // ditangani cert-popup.js
     const h = decodeURIComponent(location.hash);
     let m;
     if ((m = h.match(/^#\/p\/(.+)$/))) openDetail(m[1]);

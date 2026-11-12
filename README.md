@@ -12,6 +12,25 @@ Portal katalog digital bergaya macOS / Apple.com untuk seluruh **79 produk Epson
 7. **Proyektor Bisnis (3LCD):** `EB-E600` (55,70%), `EB-X600` (55,02%)
 8. **Tinta Botol Orisinal:** `T6641`–`T6644` (CMYK) & `003` (CMYK)
 
+## Popup Keterangan Sertifikat
+
+Klik **nomor sertifikat** di kartu produk, halaman detail, tabel sertifikat, atau tabel
+bandingkan untuk membuka popup *Detail Sertifikat Tanda Sah TKDN*: jenis sertifikat,
+periode penerbitan, pemegang, nilai BMP, rentang TKDN / TKDN+BMP, status kelayakan
+pengadaan (≥ 25%), daftar model yang tercakup, tombol salin, dan tautan verifikasi ke
+`tkdn.kemenperin.go.id`. Tautan langsung: `#/cert/<nomor sertifikat di-encode>`.
+
+Daftar lengkap **42 nomor sertifikat** ada di [CERTIFICATES.md](CERTIFICATES.md).
+Data popup di-generate dari `products.js`:
+
+```powershell
+node scripts/build_certs.js
+node scripts/build_cert_list.js
+```
+
+File `assets/data/certs.js` dan `assets/js/cert-popup.js` bersifat mandiri (tanpa
+dependency) dan dipasang juga di katalog EcoTank, Proyektor, dan Playbook.
+
 ## Sumber Data
 - **Katalog Produk Epson TKDN FY25** (40 halaman)
 - **Daftar Produk Epson Bersertifikat TKDN** (Valid efektif per 28 Agustus 2026)
