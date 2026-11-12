@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Epson TKDN &amp; PDN — Katalog Digital Pengadaan Resmi</title>
+  <meta name="description" content="Katalog digital interaktif seluruh produk Epson Indonesia bersertifikat TKDN Kemenperin RI &amp; Produk Dalam Negeri (PDN): Printer EcoTank, WorkForce Enterprise, Scanner, Dot Matrix, Passbook, ColorWorks, Plotter SureColor, Proyektor, dan Tinta." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003399'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' fill='white' font-family='-apple-system,BlinkMacSystemFont,sans-serif' font-weight='800' font-size='22'%3ETKDN%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- macOS Top Menu Bar -->
+  <header class="menubar" role="banner">
+    <div class="menubar-left">
+      <span class="epson-mark" aria-label="Epson">EPSON</span>
+      <span class="menu-title">Katalog TKDN &amp; PDN</span>
+      <nav class="menu-links" aria-label="Menu utama">
+        <button class="menu-link" data-menu="all">Semua Produk</button>
+        <button class="menu-link" data-menu="certs">Tabel Sertifikat</button>
+        <button class="menu-link" data-menu="compare">Bandingkan</button>
+        <button class="menu-link" data-menu="CrossLinkPrinter">Katalog EcoTank</button>
+        <button class="menu-link" data-menu="CrossLinkProj">Katalog Proyektor</button>
+        <button class="menu-link" data-menu="about">Tentang TKDN</button>
+      </nav>
+    </div>
+    <div class="menubar-right">
+      <button class="icon-btn" id="spotlightBtn" title="Cari produk / No. Sertifikat (⌘K atau /)" aria-label="Pencarian cepat">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+        <span class="kbd">⌘K</span>
+      </button>
+      <button class="icon-btn" id="themeBtn" title="Ganti mode terang / gelap" aria-label="Ganti tema">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.5 4.9l1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1zm14.9 14.9 1.4-1.4 2.1 2.1-1.4 1.4-2.1-2.1zM1 11h3v2H1v-2zm19 0h3v2h-3v-2zM3.5 19.1l2.1-2.1 1.4 1.4-2.1 2.1-1.4-1.4zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1L17 5.6z"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.5 7.5 0 0 1 12.3 3z"/></svg>
+      </button>
+      <span class="clock" id="clock" aria-live="off"></span>
+    </div>
+  </header>
+
+  <!-- Main Finder-style Window -->
+  <div class="desktop">
+    <div class="window" id="catalogWindow">
+      <!-- Window Toolbar -->
+      <div class="titlebar">
+        <div class="traffic" aria-hidden="true">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="window-heading">
+          <h1 id="paneTitle">Semua Produk TKDN &amp; PDN</h1>
+          <span class="sub" id="paneCount">Memuat…</span>
+        </div>
+        <div class="toolbar-controls">
+          <button class="filter-pill" id="filterBtn" aria-label="Filter &amp; Kategori" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4V6zm3 5h10v2H7v-2zm4 5h2v2h-2v-2z"/></svg>
+            <span>Filter</span>
+            <b class="filter-badge" id="filterBadge" hidden>0</b>
+          </button>
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+            <input type="search" id="searchInput" placeholder="Cari model, kode SKU, nomor sertifikat (mis. L3251, DS-530II, EB-X600, 6109)…" autocomplete="off" />
+            <button class="clear-btn" id="clearSearch" hidden aria-label="Hapus pencarian">×</button>
+          </div>
+          <div class="segmented" role="group" aria-label="Tampilan">
+            <button data-view="grid" class="active" title="Tampilan ikon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+            </button>
+            <button data-view="list" title="Tampilan daftar">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+            </button>
+          </div>
+          <select id="sortSelect" aria-label="Urutkan">
+            <option value="default">Urutan: Kategori</option>
+            <option value="tkdn">Nilai TKDN+BMP (Tertinggi)</option>
+            <option value="new">Sertifikat 2026 dulu</option>
+            <option value="name">Nama (A → Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Apple.com-style Chapter Navigation + Visible Filter & Status Bars (mobile/tablet) -->
+      <nav class="chapternav" id="chapterNav" aria-label="Kategori produk"></nav>
+      <div class="subfilter-wrap" aria-label="Filter cepat">
+        <div class="subfilter-row" id="mobileFeatureBar"></div>
+        <div class="subfilter-row" id="mobileStatusBar"></div>
+      </div>
+      <div class="active-filters" id="activeFilters" hidden></div>
+
+      <div class="window-body">
+        <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+        <!-- Finder Sidebar -->
+        <aside class="sidebar" id="sidebar" aria-label="Filter kategori dan sertifikasi">
+          <div class="sheet-handle" aria-hidden="true"><span></span></div>
+          <div class="drawer-head">
+            <div>
+              <strong>Filter &amp; Sertifikasi</strong>
+              <small class="drawer-sub">Sesuaikan kategori, status TKDN/PDN, &amp; fitur</small>
+            </div>
+            <button class="icon-btn" id="drawerClose" aria-label="Tutup menu">×</button>
+          </div>
+          <div class="sidebar-scroll">
+            <div class="side-group">
+              <div class="side-label">Kategori Produk</div>
+              <ul id="categoryList" class="side-list"></ul>
+            </div>
+
+            <div class="side-group">
+              <div class="side-label">Filter TKDN &amp; Fitur</div>
+              <ul id="featureList" class="side-list"></ul>
+            </div>
+
+            <div class="side-group">
+              <div class="side-label">Tingkat TKDN / Status</div>
+              <div id="tierList" class="ink-pills"></div>
+            </div>
+
+            <div class="side-group">
+              <div class="side-label">Referensi Cepat</div>
+              <ul class="side-list">
+                <li><button class="side-item" data-menu="certs">📋 Tabel Nomor Sertifikat</button></li>
+                <li><button class="side-item" data-menu="CrossLinkPrinter">🖨️ Katalog EcoTank (49 Model)</button></li>
+                <li><button class="side-item" data-menu="CrossLinkProj">📽️ Katalog Proyektor (21 Model)</button></li>
+                <li><button class="side-item" data-menu="about">ℹ️ Panduan TKDN &amp; BMP</button></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sheet-footer">
+            <button class="btn" id="sheetReset">Atur Ulang</button>
+            <button class="btn primary" id="sheetApply">Tampilkan produk</button>
+          </div>
+
+          <div class="side-footer">
+            <div>Sumber: Katalog Produk Epson TKDN FY25 &amp; Daftar Sertifikat TKDN (Efektif 28 Agustus 2026)</div>
+          </div>
+        </aside>
+
+        <!-- Content Pane -->
+        <main class="content" id="contentPane">
+          <!-- Hero Banner -->
+          <section class="hero" id="hero"></section>
+
+          <!-- Product Grid -->
+          <section class="grid" id="grid" aria-live="polite"></section>
+
+          <div class="empty" id="empty" hidden>
+            <p>Tidak ada produk TKDN/PDN yang cocok dengan filter ini.</p>
+            <button class="btn" id="resetBtn">Atur ulang filter</button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Compare Dock -->
+  <div class="dock" id="dock" hidden>
+    <div class="dock-inner">
+      <span class="dock-label">Bandingkan</span>
+      <div class="dock-items" id="dockItems"></div>
+      <button class="btn primary" id="compareBtn">Bandingkan (0)</button>
+      <button class="btn ghost" id="clearCompare" title="Kosongkan">✕</button>
+    </div>
+  </div>
+
+  <!-- Product Quick Look / Detail & Compare Modal -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-bar">
+        <div class="traffic">
+          <button class="dot red" id="modalClose" aria-label="Tutup"></button>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <span class="modal-title" id="modalTitle">Detail Produk</span>
+        <div class="modal-actions">
+          <button class="btn ghost" data-close>Tutup <span class="kbd">Esc</span></button>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Spotlight Command Palette -->
+  <div class="spotlight" id="spotlight" hidden>
+    <div class="spotlight-box" role="dialog" aria-label="Pencarian cepat">
+      <div class="spotlight-input">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.71.71l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+        <input id="spotInput" type="text" placeholder="Ketik model, kode SKU, atau nomor sertifikat (mis. L3251, DS-530II, 6109, 10240)…" autocomplete="off" />
+        <span class="kbd">Esc</span>
+      </div>
+      <ul class="spotlight-results" id="spotResults"></ul>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/data/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
