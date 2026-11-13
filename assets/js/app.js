@@ -434,8 +434,8 @@
     if (k === "all") { $("#resetBtn").click(); closeModal(); }
     if (k === "certs") openCertsTable();
     if (k === "compare") state.compare.length >= 2 ? (location.hash = "#/compare/" + encodeURIComponent(state.compare.join(","))) : toast("Tambahkan minimal 2 produk dengan tombol + pada kartu");
-    if (k === "CrossLinkPrinter") window.open("https://aris-projectai.github.io/epson-ecotank-catalog/", "_blank", "noopener");
-    if (k === "CrossLinkProj") window.open("https://aris-projectai.github.io/epson-projector-catalog/", "_blank", "noopener");
+    if (k === "CrossLinkPrinter") window.open("https://coverpageid.github.io/epson-ecotank-catalog/", "_blank", "noopener");
+    if (k === "CrossLinkProj") window.open("https://coverpageid.github.io/epson-projector-catalog/", "_blank", "noopener");
     if (k === "about") openAbout();
   });
 
